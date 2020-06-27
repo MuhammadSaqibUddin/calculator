@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0; box-sizing: border-box;font-weight: 600;
+    font-size: 18px;}
+
+body{
+    overflow-x: hidden;
+}
+
+.numBtn{
+    background-color: #023e8a;
+    color: #fff;    
+}
+button:hover{
+    background-color: #03045e;
+}
+.main-div{
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 3px #808080;
+}
+table td{
+    width: 500px;
+    padding: 5px;
+    text-align: center;
+}
+table td button{
+    width: 100%;
+    padding: 25px;
+    background-color: #0077b6;
+    color: #fff;
+    border: 1px solid #0096c7;
+    outline: none !important;
+    box-shadow: 2px 2px 2px #808080;
+
+}

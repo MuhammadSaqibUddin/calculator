@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mb-2" style="background-color: #023e8a;">
+            <div class="col">
+                <h1 class="text-center text-white">Calculator</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container main-div p-2">
+        <div class="row">
+            <div class="col">
+                <input id="result" class="form-control form-control-lg" type="text" placeholder="0" readonly>
+            </div>
+        </div>
+
+        <div class="row mt-2 mb-2">
+            <div class="col">
+                <table>
+                    <tr>
+                        <td colspan="1"><button class="delBtn" onclick="delResult();">Del</button></td>
+                        <td colspan="2"><button class="clearBtn" onclick="clearResult();">C</button></td>
+                        <td><button onclick="getOperator('/');">÷</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="numBtn" onclick="setNum('7');">7</button></td>
+                        <td><button class="numBtn" onclick="setNum('8');">8</button></td>
+                        <td><button class="numBtn" onclick="setNum('9');">9</button></td>
+                        <td><button onclick="getOperator('*');">x</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="numBtn" onclick="setNum('4');">4</button></td>
+                        <td><button class="numBtn" onclick="setNum('5');">5</button></td>
+                        <td><button class="numBtn" onclick="setNum('6');">6</button></td>
+                        <td><button onclick="getOperator('-');">-</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="numBtn" onclick="setNum('1');">1</button></td>
+                        <td><button class="numBtn" onclick="setNum('2');">2</button></td>
+                        <td><button class="numBtn" onclick="setNum('3');">3</button></td>
+                        <td><button onclick="getOperator('+');">+</button></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><button onclick="getOperator('0');"class="numBtn">0</button></td>
+                        <td><button onclick="calAns()">=</button></td>
+                    </tr>
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
